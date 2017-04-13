@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack.js",
-    "test": "mocha --compilers js:babel/register"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
