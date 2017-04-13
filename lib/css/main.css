@@ -6,3 +6,8 @@ body {
   background-repeat: no-repeat;
 
 }
+
+.logo {
+  background-image: url('../images/Cloudkicker_logo.jpg');
+
+}
