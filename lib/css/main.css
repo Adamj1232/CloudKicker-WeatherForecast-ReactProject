@@ -5,8 +5,10 @@ body {
   background-image: url('../images/sunnyDay3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #4f4e4e;
- background-blend-mode: overlay;
+  background-color: rgba(80, 89, 191, 0.46);
+  background-blend-mode: overlay;
+  color: #FFF;
+  text-shadow: 0px 0 #000000 ,0 0px #000000 ,0 1.5px #000000 ,0 1.5px #000000 ;
 }
 
 span {
@@ -35,12 +37,27 @@ span {
   align-items: flex-end;
 }
 
+#current-title {
+  /*text-shadow: -1px 0 #000000 ,0 1px #000000 ,1px 0 #000000 ,0 -1px #000000 ;*/
+}
+
 #current-weather-container {
   display: flex;
   width: 100%;
   height: 500px;
-  flex-direction: column;
+  /*flex-direction: column;*/
   align-items: center;
+  justify-content: center;
+}
+
+#current-inner-container {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.32);
+    padding: 20px;
+    border-radius: 60px;
 }
 
 #hourly-tenday-container {
@@ -50,23 +67,27 @@ span {
 
 }
 
-#hourly-container {
+#hourly-container,
+#tenday-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: center;
+  /*flex-direction: column;*/
   height: 800px;
   width: 50%;
 }
 
-#tenday-container {
+#hourly-inner-container,
+#tenday-inner-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
-  height: 800px;
-  width: 50%;
+  padding: 20px;
+  border-radius: 60px;
+  background: rgba(0, 0, 0, 0.32);
 }
+
 
 #card-tenday {
   height: 50px;
