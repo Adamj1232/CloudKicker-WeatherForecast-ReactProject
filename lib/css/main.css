@@ -7,8 +7,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.logo {
-  background-image: url('../images/Cloudkicker_logo.jpg');
+span {
+  background-image: url('../images/Cloudkicker_logo.png');
+  background-size: cover;
+  height: 100px;
+  width: 300px;
 }
 
 #weatherly {
