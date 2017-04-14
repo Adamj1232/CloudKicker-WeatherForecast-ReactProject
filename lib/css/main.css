@@ -12,7 +12,7 @@ body {
 }
 
 span {
-  background-image: url('../images/Cloudkicker_logo.png');
+  background-image: url('../images/Cloudkicker_logo_copy.png');
   background-size: cover;
   height: 100px;
   width: 300px;
@@ -52,12 +52,12 @@ span {
 
 #current-inner-container {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.32);
-    padding: 20px;
-    border-radius: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.32);
+  padding: 20px;
+  border-radius: 60px;
 }
 
 #hourly-tenday-container {
