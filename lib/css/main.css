@@ -8,6 +8,7 @@ body {
   background-color: rgba(80, 89, 191, 0.46);
   background-blend-mode: overlay;
   color: #FFF;
+  text-shadow: 0px 0 #000000 ,0 0px #000000 ,0 1.5px #000000 ,0 1.5px #000000 ;
 }
 
 span {
@@ -34,6 +35,10 @@ span {
 #input {
   display:flex;
   align-items: flex-end;
+}
+
+#current-title {
+  /*text-shadow: -1px 0 #000000 ,0 1px #000000 ,1px 0 #000000 ,0 -1px #000000 ;*/
 }
 
 #current-weather-container {
@@ -83,14 +88,6 @@ span {
   background: rgba(0, 0, 0, 0.32);
 }
 
-/*#tenday-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  height: 800px;
-  width: 50%;
-}*/
 
 #card-tenday {
   height: 50px;
