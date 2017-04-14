@@ -2,9 +2,11 @@
 body {
   height:100%;
   width:100%;
-  background-image: url('../images/sunnyDay.jpg');
+  background-image: url('../images/sunnyDay3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #4f4e4e;
+ background-blend-mode: overlay;
 }
 
 span {
