@@ -1,13 +1,78 @@
+
 body {
+  height:100%;
+  width:100%;
   background-image: url('../images/sunnyDay.jpg');
   background-size: cover;
-  /*width:100%;
-  height:100%;*/
   background-repeat: no-repeat;
-
 }
 
 .logo {
   background-image: url('../images/Cloudkicker_logo.jpg');
+}
 
+#weatherly {
+  height:100%;
+  width:100%;
+  margin: 0;
+}
+
+#header {
+  height:200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#input {
+  display:flex;
+  align-items: flex-end;
+}
+
+#current-weather-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hourly-tenday-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+#hourly-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 800px;
+  width: 50%;
+}
+
+#tenday-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 800px;
+  width: 50%;
+}
+
+#card-tenday {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card-hourly {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
