@@ -20,17 +20,18 @@ span {
 
 input {
   border-radius: 10px;
-  width: 250px;
+  width: 300px;
   height: 25px;
   text-align: center;
 }
 
 button {
-  margin-left: 10px;
+  margin-left: 20px;
   background-color: #55585e;
   border-radius: 10px;
   color: white;
   height: 30px;
+  padding: 5px 15px;
 }
 
 .location {
@@ -39,6 +40,10 @@ button {
 
 .current-condition-elements {
   margin: 10px;
+}
+
+.ten-day  {
+  margin: 0 0 15px;
 }
 
 #open-statement {
@@ -61,6 +66,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 #input {
@@ -70,9 +76,11 @@ button {
 
 #current-weather-container {
   display: flex;
-  height: 400px;
+  height: 300px;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin: 30px 0;
 }
 
 #current-inner-container {
@@ -80,48 +88,87 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.32);
+  background: rgba(0, 0, 0, 0.40);
   padding: 20px;
   border-radius: 60px;
-  width: 70%;
+  width: 95%;
 }
 
 #hourly-tenday-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  /*align-items: center;*/
+  flex-direction: row;
   width: 100%;
+  padding: 20px;
 }
 
-#hourly-container,
-#tenday-container {
+#stacked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+#hourly-container{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 600px;
-  width: 45%;
+  width: 25%;
+  margin-right: 35px;
 }
 
-#hourly-inner-container,
-#tenday-inner-container {
+#tenday-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+#hourly-inner-container {
   overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: flex-start;
   padding: 20px;
   border-radius: 60px;
-  background: rgba(0, 0, 0, 0.32);
-  height: 450px;
-  width: 60%;
+  background: rgba(0, 0, 0, 0.40);
+  height: 585px;
+  width: 95%;
+  min-width: 190px;
 }
 
+#tenday-inner-container {
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 60px;
+  background: rgba(0, 0, 0, 0.40);
+  height: 170px;
+  width: 95%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap
+}
 
 #card-tenday {
   height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 #card-hourly {
@@ -132,4 +179,14 @@ button {
   margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 1px solid #425a82;
+}
+
+#high {
+  color: #FF0000;
+  margin: 5px;
+}
+
+#low {
+  color: #639fff;
+  margin: 5px;
 }
