@@ -70,9 +70,11 @@ button {
 
 #current-weather-container {
   display: flex;
-  height: 400px;
+  height: 300px;
   align-items: center;
   justify-content: center;
+  width: 85%;
+  margin: 30px 0;
 }
 
 #current-inner-container {
@@ -83,7 +85,7 @@ button {
   background: rgba(0, 0, 0, 0.32);
   padding: 20px;
   border-radius: 60px;
-  width: 70%;
+  width: 100%;
 }
 
 #hourly-tenday-container {
@@ -92,36 +94,74 @@ button {
   width: 100%;
 }
 
-#hourly-container,
-#tenday-container {
+#stacked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hourly-container{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 600px;
-  width: 45%;
+  width: 35%;
 }
 
-#hourly-inner-container,
-#tenday-inner-container {
+#tenday-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 90%;
+  margin-top: 35px;
+}
+
+#hourly-inner-container {
   overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: flex-start;
   padding: 20px;
   border-radius: 60px;
   background: rgba(0, 0, 0, 0.32);
-  height: 450px;
-  width: 60%;
+  height: 585px;
+  width: 90%;
 }
 
+#tenday-inner-container {
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  /*justify-content: flex-start;*/
+  padding: 20px;
+  border-radius: 60px;
+  background: rgba(0, 0, 0, 0.32);
+  height: 170px;
+  width: 90%;
+  overflow-x: scroll;
+   overflow-y: hidden;
+   white-space:nowrap
+}
 
 #card-tenday {
   height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#card-tenday table {
+  display: inline;
 }
 
 #card-hourly {
@@ -132,4 +172,14 @@ button {
   margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 1px solid #425a82;
+}
+
+#high {
+  color: red;
+  text-shadow: none;
+}
+
+#low {
+  color: #4271dd;
+  text-shadow: none;
 }
