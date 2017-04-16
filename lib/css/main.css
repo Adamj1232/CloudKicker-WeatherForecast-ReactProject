@@ -18,6 +18,29 @@ span {
   width: 300px;
 }
 
+input {
+  border-radius: 10px;
+  width: 250px;
+  height: 25px;
+  text-align: center;
+}
+
+button {
+  margin-left: 10px;
+  background-color: #55585e;
+  border-radius: 10px;
+  color: white;
+  height: 30px;
+}
+
+.location {
+  font-size: 2.5em;
+}
+
+.current-condition-elements {
+  margin: 10px;
+}
+
 #open-statement {
   width: 100%;
   display:flex;
@@ -45,13 +68,8 @@ span {
   align-items: flex-end;
 }
 
-.current-condition-elements {
-  margin: 10px;
-}
-
 #current-weather-container {
   display: flex;
-  width: 100%;
   height: 400px;
   align-items: center;
   justify-content: center;
@@ -65,13 +83,13 @@ span {
   background: rgba(0, 0, 0, 0.32);
   padding: 20px;
   border-radius: 60px;
+  width: 70%;
 }
 
 #hourly-tenday-container {
   display: flex;
   justify-content: center;
   width: 100%;
-
 }
 
 #hourly-container,
@@ -80,11 +98,12 @@ span {
   align-items: center;
   justify-content: center;
   height: 700px;
-  width: 50%;
+  width: 45%;
 }
 
 #hourly-inner-container,
 #tenday-inner-container {
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +111,8 @@ span {
   padding: 20px;
   border-radius: 60px;
   background: rgba(0, 0, 0, 0.32);
-  height: 400px;
+  height: 450px;
+  width: 60%;
 }
 
 
@@ -101,11 +121,15 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 #card-hourly {
-  height: 50px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #425a82;
 }
