@@ -7,7 +7,9 @@
     "start": "webpack-dev-server",
     "build": "webpack.js",
     "test": "jest",
-    "setupTestFrameworkScriptFile": ["test/MockLocalStorage.js"]
+    "setupTestFrameworkScriptFile": [
+      "test/MockLocalStorage.js"
+    ]
   },
   "repository": {
     "type": "git",

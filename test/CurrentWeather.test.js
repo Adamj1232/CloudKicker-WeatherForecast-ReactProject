@@ -7,13 +7,18 @@ import $ from 'jquery';
 require ('locus')
 
 describe('<CurrentWeather />', () => {
+  it('should have seven children', () => {
+    var wrapper = shallow(<CurrentWeather weather={[Data]}/>)
+    var testDiv = wrapper.find('#current-inner-container').node.props.children
+    expect(testDiv.length).toEqual(7)
+  })
+
   it('should populate div with current Day from test API', () => {
 
     var wrapper = shallow(<CurrentWeather weather={[Data]}/>)
     var testDay = wrapper.find('#testDay');
 
     expect(testDay.node.props.children).toEqual('Monday')
-
   });
 
   it('should populate div with current location from test API', () => {
@@ -22,7 +27,5 @@ describe('<CurrentWeather />', () => {
     var testLocation = wrapper.find('.location')
 
     expect(testLocation.node.props.children[1]).toEqual('Denver, CO')
-
-    console.log(testLocation.node.props.children[1])
   });
 })
