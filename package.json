@@ -1,15 +1,15 @@
 {
   "name": "react-starter-kit",
+  "jest":{
+    "setupFiles":["<rootDir>/__mocks__/LocalStorageMock.js"]
+  },
   "version": "1.0.0",
   "description": "A good enough starter kit for a React project, I guess.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack.js",
-    "test": "jest",
-    "setupTestFrameworkScriptFile": [
-      "test/MockLocalStorage.js"
-    ]
+    "test": "jest"
   },
   "repository": {
     "type": "git",

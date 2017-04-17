@@ -1,22 +1,34 @@
 import React from 'react';
 import Weatherly from '../lib/components/Weatherly';
+import SearchField from '../lib/components/Weatherly';
 import { shallow, mount, render } from 'enzyme';
 import Data from './mock-API.js';
+import $ from 'jquery';
+require ('locus')
 
+var wrapper = shallow(<Weatherly />)
 
-// describe('<Weatherly />', () => {
-//   it('state.input should change when input is changed and clear field after button click', () => {
-//    var wrapper = mount(<Weatherly />)
-//   //  var input = wrapper.find('input[type="input"]');
-//   //  var btn = wrapper.find('#button');
-//
-//   //  input.simulate('change', { target: { value: 'denver, co' } });
-//    //
-//   //  expect(wrapper.state('inputCity')).toEqual('denver, co')
-//    //
-//   //  btn.simulate('click');
-//    //
-//   //  expect(wrapper.state('inputCity')).toEqual('')
-//   console.log(wrapper.debug())
-//   });
-// })
+describe('<Weatherly />', () => {
+  it('Weatherly state.weather starts as empty array', () => {
+   var state = wrapper.state('weather');
+
+   expect(state).toEqual([])
+ })
+
+ it('should render state.weather with mock api data', () => {
+   var state = wrapper.state('weather')
+   state.push(Data);
+
+   expect(state.length).toEqual(1)
+
+ })
+
+ it('main should have a length of two items', () => {
+   var testMain = wrapper.find('#main').node.props.children
+  //  console.log(testMain[1]);
+   expect(testMain[0].props.children[0].props.className).toEqual('logo')
+   expect(testMain[0].props.children[1].props.className).toEqual('test-search')
+   expect(testMain[1].props.id).toEqual('hourly-tenday-container')
+
+ })
+})
