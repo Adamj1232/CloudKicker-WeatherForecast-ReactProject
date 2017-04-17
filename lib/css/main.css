@@ -116,7 +116,6 @@ button {
   justify-content: center;
   height: 600px;
   width: 25%;
-  margin-right: 35px;
 }
 
 #tenday-container {
@@ -138,7 +137,7 @@ button {
   padding: 20px;
   border-radius: 60px;
   background: rgba(0, 0, 0, 0.40);
-  height: 585px;
+  height: 610px;
   width: 95%;
   min-width: 190px;
 }
@@ -156,7 +155,8 @@ button {
   width: 95%;
   overflow-x: scroll;
   overflow-y: hidden;
-  white-space:nowrap
+  white-space: nowrap;
+  margin-top: 30px;
 }
 
 #card-tenday {
@@ -194,24 +194,25 @@ button {
   body {
     min-width: 320px;
   }
-  #header {
-    flex-direction: column;
-    height: 200px;
-    margin-bottom: 80px;
+
+  button {
+    width: 306px;
+    margin: 10px 0px 0px 0px
   }
 
   span {
     margin-top: 10px;
   }
 
+  #header {
+    flex-direction: column;
+    height: 200px;
+    margin-bottom: 80px;
+  }
+
   #input {
     flex-direction: column;
     align-items: center;
-  }
-
-  button {
-    width: 306px;
-    margin: 10px 0px 0px 0px
   }
 
   #stacked {
@@ -224,8 +225,6 @@ button {
   #tenday-inner-container {
     width: 80%;
   }
-
-
 
   #hourly-tenday-container {
     flex-direction: column;
