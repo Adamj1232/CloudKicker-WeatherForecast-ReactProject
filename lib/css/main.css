@@ -40,6 +40,7 @@ button {
 
 .current-condition-elements {
   margin: 10px;
+  text-align: center;
 }
 
 .ten-day  {
@@ -97,9 +98,7 @@ button {
 #hourly-tenday-container {
   display: flex;
   justify-content: space-around;
-  /*align-items: center;*/
   flex-direction: row;
-  width: 100%;
   padding: 20px;
 }
 
@@ -182,11 +181,68 @@ button {
 }
 
 #high {
-  color: #FF0000;
+  color: #ff7d7d;
   margin: 5px;
 }
 
 #low {
   color: #639fff;
   margin: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    min-width: 320px;
+  }
+  #header {
+    flex-direction: column;
+    height: 200px;
+    margin-bottom: 80px;
+  }
+
+  span {
+    margin-top: 10px;
+  }
+
+  #input {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 306px;
+    margin: 10px 0px 0px 0px
+  }
+
+  #stacked {
+    width: 100%;
+    justify-content: space-between;
+    height: 660px;
+  }
+
+  #current-inner-container,
+  #tenday-inner-container {
+    width: 80%;
+  }
+
+
+
+  #hourly-tenday-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #hourly-container {
+    width: 100%;
+    height: 475px;
+    margin: 0;
+  }
+
+  #hourly-inner-container {
+    height: 350px;
+    width: 80%;
+  }
 }
