@@ -17,6 +17,7 @@ describe('<Weatherly />', () => {
 
  it('should render state.weather with mock api data', () => {
    var state = wrapper.state('weather')
+
    state.push(Data);
 
    expect(state.length).toEqual(1)
@@ -25,10 +26,9 @@ describe('<Weatherly />', () => {
 
  it('main should have a length of two items', () => {
    var testMain = wrapper.find('#main').node.props.children
-  //  console.log(testMain[1]);
+
    expect(testMain[0].props.children[0].props.className).toEqual('logo')
    expect(testMain[0].props.children[1].props.className).toEqual('test-search')
    expect(testMain[1].props.id).toEqual('hourly-tenday-container')
-
  })
 })

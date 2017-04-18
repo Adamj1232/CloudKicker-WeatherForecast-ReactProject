@@ -11,6 +11,7 @@ var wrapper = shallow(<CurrentWeather weather={[Data]}/>)
 describe('<CurrentWeather />', () => {
   it('should have seven children', () => {
     var testDiv = wrapper.find('#current-inner-container').node.props.children
+    
     expect(testDiv.length).toEqual(7)
   })
 
