@@ -1,18 +1,17 @@
 
-body {
+html, body {
   background-blend-mode: overlay;
   background-color: rgba(80, 89, 191, 0.46);
-  background-image: url('../images/sunnyDay3.jpg');
+  background-image: url('../images/sunnyDay4.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  color: #FFF;
-  height:100%;
+  color: #fafbe7;
+  height: 100%;
   text-shadow: 0px 0 #000000 ,0 0px #000000 ,0 1.5px #000000 ,0 1.5px #000000 ;
-  width:100%;
+  width: 100%;
 }
 
 span {
-  background-image: url('../images/Cloudkicker_logo_copy.png');
+  background-image: url('../images/Cloudkicker_logo1.png');
   background-size: cover;
   height: 100px;
   width: 300px;
@@ -23,12 +22,13 @@ input {
   height: 25px;
   text-align: center;
   width: 300px;
+  background-color: #fcfcee;
 }
 
 button {
   background-color: #55585e;
   border-radius: 10px;
-  color: white;
+  color: #fafbe7;
   height: 30px;
   margin-left: 20px;
   padding: 5px 15px;
@@ -109,6 +109,7 @@ button {
   flex-direction: column;
   justify-content: center;
   width: 60%;
+  height: 630px;
 }
 
 #hourly-container{
@@ -149,7 +150,7 @@ button {
   border-radius: 60px;
   display: flex;
   flex-direction: row;
-  height: 170px;
+  height: 150px;
   margin-top: 30px;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -217,13 +218,15 @@ button {
   }
 
   #stacked {
-    height: 640px;
-    justify-content: space-between;
+    height: 620px;
+    justify-content: space-around;
     width: 100%;
   }
 
-  #current-inner-container,
-  #tenday-inner-container {
+  #current-inner-container {
+    overflow: scroll;
+    max-height: 430px;
+    padding-top: 40px;
     width: 80%;
   }
 
@@ -235,8 +238,13 @@ button {
     width: 100%;
   }
 
+  #tenday-inner-container{
+    height: 135px;
+    width: 80%;
+  }
+
   #hourly-container {
-    height: 475px;
+    height: 440px;
     margin: 0;
     width: 100%;
   }
