@@ -1,7 +1,8 @@
+const webpack = require('webpack');
+
 module.exports = {
   entry: {
     main: ['babel-polyfill', './lib/index.js'],
-    test: ['babel-polyfill', 'mocha!./test/index.js'],
   },
   output: {
     path: __dirname,
@@ -23,5 +24,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.json', '.scss', '.css'],
+    alias: {
+      'jquery-ui': 'jquery-ui-dist/jquery-ui.js',
+    },
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
+  ],
 };
