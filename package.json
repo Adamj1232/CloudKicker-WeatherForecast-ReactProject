@@ -1,7 +1,9 @@
 {
   "name": "CloudKicker",
-  "jest":{
-    "setupFiles":["<rootDir>/__mocks__/LocalStorageMock.js"]
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/__mocks__/LocalStorageMock.js"
+    ]
   },
   "version": "1.0.0",
   "description": "Weather Forecast Application in React",
@@ -9,7 +11,9 @@
   "scripts": {
     "start": "webpack-dev-server --inline --hot",
     "build": "./node_modules/webpack/bin/webpack.js",
-    "test": "mocha --require test/helpers/setup.js"
+    "test": "mocha --require test/helpers/setup.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -38,6 +42,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
+    "gh-pages": "^0.12.0",
     "jsdom": "^9.11.0",
     "locus": "^2.0.1",
     "mocha": "^2.4.5",
