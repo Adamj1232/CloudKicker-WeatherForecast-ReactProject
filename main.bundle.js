@@ -30055,12 +30055,12 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          'h3',
+	          'h2',
 	          null,
 	          'Welcome to CloudKicker'
 	        ),
 	        _react2.default.createElement(
-	          'h3',
+	          'h2',
 	          null,
 	          'Please enter a location'
 	        )
