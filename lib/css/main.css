@@ -50,10 +50,15 @@ button {
 
 #open-statement {
   display:flex;
-  font-size: 250%;
+  font-size: 2.4em;
   justify-content: center;
-  margin-top:125px;
+  margin-top: 0px;
+  text-align: center;
   width: 100%;
+}
+
+#open-statement h2 {
+  margin-top: 0px;
 }
 
 #weatherly {
@@ -207,6 +212,13 @@ button {
 
   span {
     margin-top: 10px;
+  }
+
+  #open-statement {
+    font-size: 1.7em;
+    margin-top: 0px;
+    position: absolute;
+    top: 280px;
   }
 
   #header {
