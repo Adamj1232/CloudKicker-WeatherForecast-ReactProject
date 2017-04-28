@@ -48,6 +48,23 @@ button {
   margin: 0 0 15px;
 }
 
+.ui-menu {
+  background: #55585e;
+  list-style: none;
+  opacity: 0.9;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.ui-menu-item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.ui-helper-hidden-accessible {
+  position: absolute; left:-999em;
+}
+
 #open-statement {
   display:flex;
   font-size: 2.4em;
